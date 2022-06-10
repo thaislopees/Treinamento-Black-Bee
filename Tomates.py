@@ -42,7 +42,7 @@ cv2.destroyAllWindows()
 
 for c in contorno:
     x, y, w, h = cv2.boundingRect(c)
-    cv2.rectangle(img, (x, y), (x + w, y + h), (0,255,0), 3)
+    cv2.rectangle(img, (x, y), (x + w, y + h), (0,255,0), 2)
     cv2.putText(img, "tomate", ((x),(y-5)),cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 0, 255), 1)
     M = cv2.moments(c)
 
